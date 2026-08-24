@@ -4,17 +4,17 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "concurrently -k \"npm:dev:server\" \"npm:dev:client\"",
-    "dev:client": "vite",
-    "dev:server": "tsx watch server/index.ts",
-    "build:client": "vite build",
-    "build:server": "tsc -p tsconfig.server.json",
-    "build": "npm run build:client && npm run build:server",
-    "start": "node dist-server/server/index.js",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "check": "npm run test && npm run build"
-  },
+  "dev": "concurrently -k \"npm:dev:server\" \"npm:dev:client\"",
+  "dev:client": "vite",
+  "dev:server": "tsx watch server/index.ts",
+  "build:client": "vite build",
+  "build:server": "tsc -p tsconfig.server.json",
+  "build": "npm run build:client && npm run build:server",
+  "start": "node dist-server/server/index.js",
+  "test": "vitest run",
+  "test:watch": "vitest",
+  "check": "npm run test && npm run build"
+},
   "dependencies": {
     "@vitejs/plugin-react": "latest",
     "express": "latest",

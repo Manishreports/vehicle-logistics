@@ -38,7 +38,7 @@ export async function downloadPdf(
   const font = await pdf.embedFont(StandardFonts.Helvetica);
 
   let page = pdf.addPage();
-  const { width, height } = page.getSize();
+  const { height } = page.getSize();
 
   let y = height - 40;
 

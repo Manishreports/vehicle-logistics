@@ -1,11 +1,10 @@
 import express from 'express';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import type { AppState } from '../src/types/models.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const projectRoot = path.resolve(__dirname, '..');
+const projectRoot = process.cwd();
 const dataFile = path.join(projectRoot, 'data', 'db.json');
 const distDir = path.join(projectRoot, 'dist');
 
